@@ -26,5 +26,10 @@ RSpec.describe 'Recipes Show', type: :feature do
       expect(page).to have_content('Ground Beef')
       expect(page).to have_content('Fake Cheese')
     end
+  
+# user story 3
+    within('#recipe-total-cost') do
+        expect(page).to have_content('Total Cost: 6')
+    end
   end
 end
